@@ -1,0 +1,27 @@
+.logo {
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-header-text-color);
+}
+
+.logo__text {
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-right: 0px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.logo__footer {
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}

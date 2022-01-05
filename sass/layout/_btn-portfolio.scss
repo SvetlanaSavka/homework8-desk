@@ -1,0 +1,75 @@
+/*.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 435px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    padding-left: 15px;
+    margin: 0 auto;
+  }
+ 
+}*/
+/*.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}*/
+.btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+  /*@media screen and (min-width: 768px) {
+    display: flex;
+  }*/
+}
+
+.button {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.button-nav {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  transition: var(--transition);
+  &:hover,
+  &:focus,
+  .active {
+    color: var(--first-text-color);
+    background-color: var(--second-button-color);
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 435px;
+    margin-bottom: 0;
+    margin-bottom: 15px;
+  }
+}

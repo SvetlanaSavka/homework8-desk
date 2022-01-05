@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <div class="header__wrap">
+          <a class="logo link" href="./index.html">Web<span class="logo__text">Studio</span>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list list">
+              <li class="header__nav-item link current">
+                <a href="./index.html" class="header__nav-link link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="header__nav-item link">
+                <a href="./portfolio.html" class="header__nav-link link "
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__nav-item link">
+                <a href="" class="header__nav-team link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__contacts list">
+            <li>
+              <a class="header__contacts-link link" href="mailto:info@devstudio.com">
+                <svg class="header-icon" width="16" height="12">
+                  <use href="./img/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a class="header__contacts-link link" href="tel:+380961111111">
+                <svg class="header-icon" width="10" height="16">
+                  <use href="./img/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+                <! -------------------- Мобильное меню------------------------>
+
+          <button type="button" class="open-menu__btn" data-menu-open> 
+            <svg class="menu_open-icon" width="40" height="40">
+              <use href="img/icons.svg#icon-menu">
+              </use>
+            </svg>
+          </button>
+          <div class="mob-menu is-hidden" data-menu>
+                      <div class="container-mob-menu">
+                    <div class="mob-menu-top">
+
+          <button type="button" class="menu__close-btn" data-menu-close> 
+            <svg class="close-icon" width="40" height="40">
+              <use href="img/icons.svg#icon-close">
+              </use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item link current">
+                <a href="./index.html" class="mob-menu__item--current link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu__item link">
+                <a href="./portfolio.html" class="mob-menu__item link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item link">
+                <a href="" class="mob-menu__item link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-contacts">
+            <ul class="mob-menu__contacts-list list">
+              <li class="mob-menu__contacts-item"><a href="tel:+380961111111"
+                 class="mob-menu__contacts-phone link">+38 096 111 11 11</a></li>
+              <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
+                 class="mob-menu__contacts-mail link">mailto:info@devstudio.com</a></li>                      
+            </ul>
+          </ul>
+          <ul class="mob-menu__socials list">
+            <li class="social__itemm"><a href=""class="mob-menu__social link"> Instagram</a></li>
+            <li class="social__itemm"><a href=""class="mob-menu__social link"> Twitter</a></li>
+            <li class="social__itemm"><a href=""class="mob-menu__social link"> Facebook</a></li>
+            <li class="social__itemm"><a href=""class="mob-menu__social link"> LinkedIn</a></li>
+          </ul>
+          </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+        <!-----Фильтр---->
+        <section class="button" >
+            <div class="conteiner">
+              <ul class="btn list">
+                  <li> <button class="button-nav" type="button">Все</button> </li>
+                  <li> <button class="button-nav" type="button">Веб-сайты</button> </li>
+                  <li> <button class="button-nav" type="button">Приложения</button> </li>
+                  <li> <button class="button-nav" type="button">Дизайн</button> </li>
+                  <li> <button class="button-nav" type="button">Маркетинг</button> </li>
+              </ul>
+        </div>
+        
+        <!----- Карточки---->
+        <div class="container-card">
+                    <ul class="card-set list ">
+                <li class="item link">
+                    <a href class="card-produkt-link link">
+                        <div class="masters-item-wrap">
+                          <picture>
+                <source
+                srcset="./img/mobile.img/img111-mob-1x.jpg,
+                           ./img/mobile.img/img111-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img111-tablet-1x.jpg,
+                           ./img/tablet.img/img111-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img111-desk-1x.jpg,
+                           ./img/desk.img/img111-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img111.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+                          
+            
+            <p class="portfolio-text">
+                "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                шпионажа и атак на защищённые сервера конкурентов."
+            </p>
+            </div>
+            <div class="card-content link"> 
+              
+            <h2 class="about-our-project link">Технокряк</h2>
+            <p class="about-project link">Веб-сайт</p>
+            </div>
+            </a>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img222-mob-1x.jpg,
+                           ./img/mobile.img/img222-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img222-tablet-1x.jpg,
+                           ./img/tablet.img/img222-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img222-desk-1x.jpg,
+                           ./img/desk.img/img222-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img222.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+            <div class="card-content">
+            <h2 class="about-our-project">Постер New Orlean vs Golden Star</h2>
+            <p class="about-project">Дизайн</p>
+            </div>
+            </li>
+            <li class="item list">
+            <picture>
+                <source
+                srcset="./img/mobile.img/img333-mob-1x.jpg,
+                           ./img/mobile.img/img333-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img333-tablet-1x.jpg,
+                           ./img/tablet.img/img333-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img333-desk-1x.jpg,
+                           ./img/desk.img/img333-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img333.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+
+            <!-----<img src="./img/img333.jpg" alt="фото реклама ресторана" width="370" />----->
+            <div class="card-content">
+            <h2 class="about-our-project">Ресторан Seafood</h2>
+            <p class="about-project">Приложение</p>
+            </div>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img444-mob-1x.jpg,
+                           ./img/mobile.img/img444-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img444-tablet-1x.jpg,
+                           ./img/tablet.img/img444-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img444-desk-1x.jpg,
+                           ./img/desk.img/img444-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img444.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            <!-----<img src="./img/img444.jpg" alt="фото проект прайм" width="370" />----->
+            <div class="card-content">
+            <h2 class="about-our-project">Проект Prime</h2>
+            <p class="about-project">Маркетинг</p>
+            </div>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img555-mob-1x.jpg,
+                           ./img/mobile.img/img555-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img555-tablet-1x.jpg,
+                           ./img/tablet.img/img555-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img555-desk-1x.jpg,
+                           ./img/desk.img/img555-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img555.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+            <div class="card-content">
+            <h2 class="about-our-project">Проект Boxes</h2>
+            <p class="about-project">Приложение</p>
+            </div>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img666-mob-1x.jpg,
+                           ./img/mobile.img/img666-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img666-tablet-1x.jpg,
+                           ./img/tablet.img/img666-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img666-desk-1x.jpg,
+                           ./img/desk.img/img666-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img666.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+            <div class="card-content">
+            <h2 class="about-our-project">Inspiration has no Borders</h2>
+            <p class="about-project">Веб-сайт</p>
+            </div>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img777-mob-1x.jpg,
+                           ./img/mobile.img/img777-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img777-tablet-1x.jpg,
+                           ./img/tablet.img/img777-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img777-desk-1x.jpg,
+                           ./img/desk.img/img777-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img777.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+            <div class="card-content">
+            <h2 class="about-our-project">Издание Limited Edition</h2>
+            <p class="about-project">Дизайн</p>
+            </div>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img888-mob-1x.jpg,
+                           ./img/mobile.img/img888-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img888-tablet-1x.jpg,
+                           ./img/tablet.img/img888-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img888-desk-1x.jpg,
+                           ./img/desk.img/img888-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img888.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+            <div class="card-content">
+            <h2 class="about-our-project">Проект LAB</h2>
+            <p class="about-project">Маркетинг</p>
+            </div>
+            </li>
+            <li class="item list">
+              <picture>
+                <source
+                srcset="./img/mobile.img/img999-mob-1x.jpg,
+                           ./img/mobile.img/img999-mob-2x.jpg"
+                           media="(max-width:767px)"/>
+                           <source
+                srcset="./img/tablet.img/img999-tablet-1x.jpg,
+                           ./img/tablet.img/img999-tablet-2x.jpg"
+                           media="(max-width:1199px)"/>
+                           <source
+                srcset="./img/desk.img/img999-desk-1x.jpg,
+                           ./img/desk.img/img999-desk-2x.jpg"
+                           media="(min-width:1200px)"/>
+                           <img src="./img/img999.jpg" alt="фото реклама ресторана" width="370" />
+              </picture>
+            
+            <div class="card-content">
+            <h2 class="about-our-project">Growing Business</h2>
+            <p class="about-project">Приложение</p>
+            </div>
+            </li>
+            </ul>        
+            </div>
+            
+        </section>
+    </main>
+   <footer class="footer">
+        <div class="footer-conteiner">
+        <div class="footer-conteiner__wrap">
+            <div class="footer__adress">
+                <a class="logo link" href="WebStudio">Web<span class="logo__footer">Studio</span></a>
+                <address class="footer-contact">
+                    <ul class="footer-contact__item list">
+                        <li class="footer-contact__link">
+                            г. Киев, пр-т Леси Украинки, 26 <br />
+                        </li>
+                        <li class="footer-contact__link">
+                            <a class="address-header-mailto link" href="mailto:info@example.com">info@example.com</a><br />
+                        </li>
+                        <li class="footer-contact__link">
+                            <a class="address-header-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+            </div>
+    
+    
+            <div class="footer-social">
+                <h2 class="footer-social__text">присоединяйтесь</h2>
+                <ul class="footer-item list ">
+                    <li class="footer-item__list">
+                        <a href="" class="footer-item__list-wrap">
+                            <svg class="address-icons-icon" width="20" height="20">
+                                <use href="./img/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item__list">
+                        <a href="" class="footer-item__list-wrap">
+                            <svg class="address-icons-icon" width="20" height="20">
+                                <use href="./img/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item__list">
+                        <a href="" class="footer-item__list-wrap">
+                            <svg class="address-icons-icon" width="20" height="20">
+                                <use href="./img/icons.svg#icon-facebook1">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-item__list">
+                        <a href="" class="footer-item__list-wrap">
+                            <svg class="address-icons-icon" width="20" height="20">
+                                <use href="./img/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-email">
+              <h2 class="footer-social__text">Подпишитесь на рассылку</h2>
+              <div class="footer-email__item">
+              <input
+               type="text"
+               name placeholder="E-mail"
+               class="input-mailing">
+                <button type="submit"class=" hero-btn" >Подписаться
+                <svg class="address-icons-plane" width="24" height="24">
+                                <use href="./img/icons.svg#icon-plane">
+                                </use>
+                            </svg>
+                            </button>
+              </div>
+        </div>
+    </footer>
+    <script src="./JS/menu.js"></script>
+</body>
+    </body>
+
+    </html>
+
+

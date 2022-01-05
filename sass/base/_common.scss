@@ -1,0 +1,16 @@
+/* Снятие точек со списка */
+.list {
+  list-style: none;
+}
+
+/* Снятие подчеркивания со списка */
+.link {
+  text-decoration: none;
+}
+/* Доминантный на макете шрифт */
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--main-title-color);
+  color: var(--fourth-text-color);
+  letter-spacing: -0.03em;
+}

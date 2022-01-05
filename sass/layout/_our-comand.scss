@@ -1,0 +1,114 @@
+.comand-list {
+  /*display: flex;
+  margin: 0;
+  margin-left: -30px;*/
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.comand-list > .comand-list__item {
+  margin-top: 50px;
+  background-color: var(--main-title-color);
+  /*@media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }*/
+}
+
+.comand-list > .comand-list__item {
+  /*margin-left: 30px;
+  margin-top: 0px;
+  background-color: var(--main-title-color);*/
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 50px 15px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+.comand-list__item-people {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-bottom: 10px;
+}
+.comand-list__item-profession {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  margin-bottom: 16px;
+}
+.comand-list__item-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.comand-list__social {
+  display: flex;
+  justify-content: center;
+}
+.social__item {
+  width: 44px;
+  height: 44px;
+  & + & {
+    margin-left: 10px;
+  }
+}
+.social__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-title-color);
+  color: rgba(175, 177, 184, 1);
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--second-button-color);
+    color: var(--main-title-color);
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+}
+
+.comand {
+  background-color: #f5f4fa;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  /*background-color: #f5f4fa;
+  box-sizing: border-box;*/
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #f5f4fa;
+  }
+}

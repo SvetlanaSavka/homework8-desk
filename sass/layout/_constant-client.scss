@@ -1,0 +1,68 @@
+/*----------- Постоянные клиенты---------*/
+.client {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 320px;
+  background-color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.client-constant__iteam {
+  /*width: 170px;
+  height: 92px;*/
+  width: 100%;
+  display: flex;
+  flex-basis: calc(100% / 2 - 30px);
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  /*display: inline;*/
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    border-color: var(--second-button-color);
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.client-constant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.client-constant__iteam-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--main-title-color);
+  color: #afb1b8;
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--main-title-color);
+    color: var(--second-button-color);
+  }
+}
+
+.client-constant__iteam-icon {
+  fill: currentColor;
+}
+/* .client-constant__iteam:not(:last-child) {
+  margin-right: 30px;
+} */

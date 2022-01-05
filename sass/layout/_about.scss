@@ -1,0 +1,116 @@
+.plan {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.card-produkt-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-content {
+  flex-grow: 1;
+}
+.plan-list__item-text {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  max-width: 450px;
+  margin-bottom: 30px;
+  /* @media screen and (min-width: 768px) {
+    max-width: 1354px;
+  }*/
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+}
+
+.plan-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.plan-list > .plan-list__item {
+  margin: 0 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.plan-list__item-pre-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    text-align: left;
+  }
+}
+
+/*-------- FOR SVG-------*/
+
+.plan-list__item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+/*----------Три фотографии------*/
+.pikchers-link {
+  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.pikchers {
+  display: flex;
+}
+.pikchers__link:not(:last-child) {
+  margin-right: 30px;
+  position: relative;
+}
+
+.pikchers__link-wrap {
+  position: relative;
+}
+
+.pikchers__link-text {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0px;
+}

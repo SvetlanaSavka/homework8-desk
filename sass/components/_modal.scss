@@ -1,0 +1,233 @@
+.backdrope {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(105, 105, 105, 0.301);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: 250ms, visibility 250ms;
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+.modal {
+  position: fixed;
+  padding: 40px;
+  max-width: 450px;
+  width: 100%;
+  min-height: 609px;
+  background-color: var(--main-title-color);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  transition: transform 250ms;
+  box-sizing: border-box;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--second-button-color);
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.icon-close {
+  position: absolute;
+}
+
+.backdrope.is-hidden.modal {
+  transform: scale(1.5);
+}
+
+/*--------Для скрытия модального окна--------*/
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*--------Заполнение модального окна--------*/
+.modal {
+  padding: 40px;
+}
+
+.modal__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-header-text-color);
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.modal__title-field {
+  margin-bottom: 70px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal__title-input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  transition: var(--transition);
+}
+
+.modal__title-input-link {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-right: 41px;
+  padding-left: 39px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: transparent;
+  color: teal;
+  transition: var(--transition);
+  &:focus + .imput-icon {
+    fill: var(--second-button-color);
+  }
+  &:focus {
+    border-color: var(--second-button-color);
+  }
+  &::-moz-placeholder {
+    font-size: 14px;
+    color: var(--second-header-text-color);
+    opacity: 0.7;
+  }
+  &:-ms-input-placeholder {
+    font-size: 14px;
+    color: var(--second-header-text-color);
+    opacity: 0.7;
+  }
+  &::placeholder {
+    font-size: 14px;
+    color: var(--second-header-text-color);
+    opacity: 0.7;
+  }
+}
+
+.modal__title-link-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: teal;
+  transition: var(--transition);
+  &:focus {
+    border-color: var(--second-button-color);
+  }
+  &::-moz-placeholder {
+    font-size: 14px;
+    color: var(--second-header-text-color);
+    opacity: 0.7;
+  }
+  &:-ms-input-placeholder {
+    font-size: 14px;
+    color: var(--second-header-text-color);
+    opacity: 0.7;
+  }
+  &::placeholder {
+    font-size: 14px;
+    color: var(--second-header-text-color);
+    opacity: 0.7;
+  }
+}
+
+.modal__title-input-team {
+  position: relative;
+}
+
+.modal-input::placeholder,
+.modal-text::placeholder {
+  font-size: 14px;
+  color: var(--second-header-text-color);
+  opacity: 0.7;
+}
+
+.modal__title-input-team {
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.modal__title-input-text {
+  font-size: 12px;
+  color: var(--third-text-color);
+}
+
+/*--------Чекбокс--------*/
+.modal__check-text-color {
+  margin-left: 5px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--first-header-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.modal__check-text {
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    margin-right: 5px;
+    display: block;
+    border-radius: 2px;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+  .modal-check:checked + &::before {
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}
