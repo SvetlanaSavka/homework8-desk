@@ -11,8 +11,7 @@
 }
 
 .client-constant__iteam {
-  /*width: 170px;
-  height: 92px;*/
+  height: 92px;
   width: 100%;
   display: flex;
   flex-basis: calc(100% / 2 - 30px);
@@ -29,6 +28,10 @@
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
+    width: 100%;
   }
 }
 

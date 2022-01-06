@@ -14,7 +14,7 @@
   color: var(--second-text-color);
   margin-right: 0px;
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    margin-right: 0px;
   }
 }
 
@@ -24,4 +24,7 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

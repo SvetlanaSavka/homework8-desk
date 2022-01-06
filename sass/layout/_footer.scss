@@ -35,8 +35,14 @@
     margin-left: 70px;
   }
 }
+.footer-email {
+  text-align: center;
+}
 .footer-conteiner {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .address-header-tel {
   font-size: 14px;

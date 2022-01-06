@@ -85,17 +85,17 @@ img {
 }
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -435,7 +435,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .logo__text {
-    margin-right: 93px;
+    margin-right: 0px;
   }
 }
 
@@ -445,6 +445,11 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo__footer {
+    text-align: left;
+  }
 }
 
 .header__wrap {
@@ -456,10 +461,6 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
-  /* @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }*/
 }
 @media screen and (min-width: 1200px) {
   .header {
@@ -810,7 +811,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--third-text-color);
   max-width: 450px;
-  margin-bottom: 30px;
   /* @media screen and (min-width: 768px) {
     max-width: 1354px;
   }*/
@@ -1061,8 +1061,7 @@ img {
 }
 
 .client-constant__iteam {
-  /*width: 170px;
-  height: 92px;*/
+  height: 92px;
   width: 100%;
   display: flex;
   flex-basis: calc(100% / 2 - 30px);
@@ -1080,6 +1079,12 @@ img {
 @media screen and (min-width: 768px) {
   .client-constant__iteam {
     flex-basis: calc(100% / 3 - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-constant__iteam {
+    max-width: 170px;
+    width: 100%;
   }
 }
 
@@ -1160,8 +1165,17 @@ img {
   }
 }
 
+.footer-email {
+  text-align: center;
+}
+
 .footer-conteiner {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-conteiner {
+    text-align: left;
+  }
 }
 
 .address-header-tel {
@@ -1356,7 +1370,6 @@ img {
 @media screen and (min-width: 1200px) {
   .card-set > .item {
     flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
   }
 }
 
@@ -1376,7 +1389,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   line-height: 1.5;
   padding: 63px 24px;
