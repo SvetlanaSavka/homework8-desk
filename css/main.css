@@ -735,7 +735,6 @@ img {
   padding-bottom: 118px;
   justify-content: center;
   box-sizing: border-box;
-  /*min-height: 400px;*/
   margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -822,9 +821,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--third-text-color);
   max-width: 450px;
-  /* @media screen and (min-width: 768px) {
-    max-width: 1354px;
-  }*/
 }
 @media screen and (min-width: 1200px) {
   .plan-list__item-text {
@@ -1434,17 +1430,6 @@ img {
   overflow: hidden;
 }
 
-/*.projects__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 30px);
-  }*/
 /*.container {
   @media screen and (min-width: 1200px) {
     max-width: 435px;
