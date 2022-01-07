@@ -27,6 +27,8 @@
   margin-bottom: 50px;
   flex-wrap: wrap;
   margin-right: -8px;
+  //margin-bottom: -15px;
+  border: none;
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     justify-content: center;
@@ -72,5 +74,11 @@
     max-width: 435px;
     margin-bottom: 0;
     margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }

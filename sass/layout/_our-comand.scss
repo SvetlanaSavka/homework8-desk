@@ -6,11 +6,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -50px;
+    margin-top: -30px;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    margin-top: -50px;
+    margin-top: -30px;
   }
 }
 img {
@@ -31,7 +31,7 @@ img {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 50px 15px 0;
+    margin: 30px 15px 0;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
