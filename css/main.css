@@ -176,7 +176,7 @@ img {
   opacity: 1;
   transition: 250ms, visibility 250ms;
 }
-.backdrope.is-hidden .modal {
+.backdrope.is-hidden {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
