@@ -1144,6 +1144,11 @@ img {
 .footer__adress {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__adress {
+    margin-bottom: 0px;
+  }
+}
 
 .footer-contact {
   font-style: normal;
@@ -1285,6 +1290,16 @@ img {
 .footer-email {
   box-sizing: border-box;
   margin: 60px 0 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .footer-email {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-email {
+    margin: 0 0 0 auto;
+  }
 }
 
 .footer-email__item {
